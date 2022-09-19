@@ -1,9 +1,4 @@
-后续还有最新版本，请持续关注东阁以获取
-https://oo1o.cn
 
-
-模版消息的标题就是你推送时显示的标题
-模版消息内容复制下方的代码
 
 {{date.DATA}}
 🌍地区：{{region.DATA}}
@@ -28,9 +23,9 @@ on:
     # 代表国际标准时间23点0分，北京时间需要+8小时，代表北京时间上午7点运行
     - cron: '0 23 * * *'
 jobs:
-#将工作流程中运行的所有作业组合在一起
+
   build:
-  #定义名为 build 的作业。 子键将定义作业的属性 
+  
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v2
